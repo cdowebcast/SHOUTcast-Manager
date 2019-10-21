@@ -138,6 +138,7 @@ IP Address: <URL to shoutcast installation / api> (Example: http://shoutcast/you
 Assigned IPs: <put your server ip in here>
 Server Stat: <URL to shoutcast installation/stats/>
 
+
 Type: SbdShoutcast
 Username: <your super user username>
 Password: <your super user password>
@@ -146,10 +147,10 @@ Password: <your super user password>
 Setup is now complete, You can now add a product service of type SbdShoutcast.
 Each shoutcast product needs the following custom fields:
 
->>>>> Image 1 <<<<<
+>>>>> Image 1 >>>>>
 
 If you want your users to be able to select how much space they need for the AutoDJ remove the setting in the product and do the following (these exact settings must be used, including the name!, prices can be changed.)
 
->>>>> Image 2 <<<<<
+>>>>> Image 2 >>>>>
 
 Thenin your product go to Configurable Options and select the one you have just created.
