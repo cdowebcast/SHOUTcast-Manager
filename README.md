@@ -122,26 +122,26 @@ file in the wintools/ directory before starting to use this. This is for the pro
 
 ### SETTING UP WHMCS API ###
 
-Open your favourite FTP program and navigate to <WHMCS Directory>/modules/servers/
+Open your favourite FTP program and navigate to WHMCS Directory/modules/servers/
 
 Extract the WHMCS API zip file to your desktop and navigate to modules/servers and upload the sbdShoutcast folder into the above FTP location
 
-In WHMCS navigate to http://<whmcs>/admin
+In WHMCS navigate to http://whmcs/admin
 
 Click on Setup, Products/Services, Servers
 
 Click Add New server and input the following details
 
-Name: You Choose
-Hostname: input url without http:// (Example shoutcast.yourdomain.tld)
-IP Address: URL to shoutcast installation/api (Example: http://shoutcast/yourdomain.tld/api/) The trailing '/' is important
-Assigned IPs: put your server ip in here
-Server Stat: URL to shoutcast installation/stats/
+* Name: You Choose
+* Hostname: input url without http:// (Example shoutcast.yourdomain.tld)
+* IP Address: URL to shoutcast installation/api (Example: http://shoutcast/yourdomain.tld/api/) The trailing '/' is important
+* Assigned IPs: put your server ip in here
+* Server Stat: URL to shoutcast installation/stats/
 
 
-Type: SbdShoutcast
-Username: (your super user username)
-Password: (your super user password)
+* Type: SbdShoutcast
+* Username: (your super user username)
+* Password: (your super user password)
 
 
 Setup is now complete, You can now add a product service of type SbdShoutcast.
