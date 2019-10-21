@@ -1,4 +1,4 @@
-![alt text](https://scottishbordersdesign.co.uk/wp-content/themes/ScottishBordersDesignV3/images/logo-white.png "Scottish Borders Design Logo")
+![alt text](https://res.cloudinary.com/cdowebcast/image/upload/v1571648180/SHOUTcast%20Manager/logo_dp3hma.png "Scottish Borders Design Logo")
 
 # Documentation #
 I have moved the documentation to here: [SHOUTcast Manager Documentation Wiki](https://github.com/gaza1994/SHOUTcast-Manager/wiki)
@@ -147,10 +147,10 @@ Click Add New server and input the following details
 Setup is now complete, You can now add a product service of type SbdShoutcast.
 Each shoutcast product needs the following custom fields:
 
->>>>> Image 1 >>>>>
+![alt text](https://res.cloudinary.com/cdowebcast/image/upload/v1571648180/SHOUTcast%20Manager/foreach.png "WHMCS Module Config")
 
 If you want your users to be able to select how much space they need for the AutoDJ remove the setting in the product and do the following (these exact settings must be used, including the name!, prices can be changed.)
 
->>>>> Image 2 >>>>>
+![alt text](https://res.cloudinary.com/cdowebcast/image/upload/v1571648180/SHOUTcast%20Manager/autodj.png "AutoDJ Dashboard Config")
 
 Thenin your product go to Configurable Options and select the one you have just created.
