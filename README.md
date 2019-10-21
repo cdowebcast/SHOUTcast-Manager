@@ -81,14 +81,14 @@ For full insutrctions on how to install and setup please read the following: htt
 
 ### SERVER REQUIREMENTS ###
 
-IonCube
-cPanel / WHM*
-MySQL server, version 4.1 or later
-A web server with PHP version 5.4+
-PHP MySQLi extension
-PHP cURL extension
-GlibC
-* Optional for FTP
+- IonCube
+- cPanel / WHM*
+- MySQL server, version 4.1 or later
+- A web server with PHP version 5.4+
+- PHP MySQLi extension
+- PHP cURL extension
+- GlibC
+- *Optional for FTP
 
 ### HOW TO INSTALL ###
 
