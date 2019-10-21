@@ -78,3 +78,33 @@ _Have your license key handy from us_
 * navigate to yourURL.com/install and follow the steps.
 
 For full insutrctions on how to install and setup please read the following: http://client.scottishbordersdesign.co.uk/knowledgebase/9/SHOUTcast-Client
+
+HOW TO INSTALL
+
+1. Download and Extract the ZIP file downloaded from the client area onto your desktop
+
+2. Upload the files to a web accessible directory on your web server
+
+3. Create a MySQL database and a user in cPanel
+
+4. Go to the URL you uploaded the files to (EG: http://shoutcast.yourdomain.tld/)
+
+Follow the directions through the step-by-step installation pages. Some of the work will be done for you.
+
+Main steps:
+
+- Checking that all requirements are met
+- Set directories playlists/, autodj/mp3s/, logs/ and servers/ as well as the config.php file writable
+- Set each server as 777 CHMOD
+- Create database and check that MySQL is running and connection works with given credentials
+- Create tables from create.sql, save db settings to config.php and general settings to config table,
+as well as set admin's name and password.
+- Remove or rename the install folder in the install directory to be able to log in
+
+NOTE! If you are running this on Windows, you need to edit the registry keys listed in the pstools.reg
+file in the wintools/ directory before starting to use this. This is for the process tools to work in the background.
+
+5. To ensure the servers are running in a good condition and to enable the bitrate checking, you will need to add the following CRON job.
+
+*/5 * * * * php /path/to/shoutcast/cron/cron.php
+
