@@ -79,7 +79,18 @@ _Have your license key handy from us_
 
 For full insutrctions on how to install and setup please read the following: http://client.scottishbordersdesign.co.uk/knowledgebase/9/SHOUTcast-Client
 
-HOW TO INSTALL
+### SERVER REQUIREMENTS ###
+
+IonCube
+cPanel / WHM*
+MySQL server, version 4.1 or later
+A web server with PHP version 5.4+
+PHP MySQLi extension
+PHP cURL extension
+GlibC
+* Optional for FTP
+
+### HOW TO INSTALL ###
 
 1. Download and Extract the ZIP file downloaded from the client area onto your desktop
 
@@ -108,3 +119,37 @@ file in the wintools/ directory before starting to use this. This is for the pro
 
 */5 * * * * php /path/to/shoutcast/cron/cron.php
 
+
+### SETTING UP WHMCS API ###
+
+Open your favourite FTP program and navigate to <WHMCS Directory>/modules/servers/
+
+Extract the WHMCS API zip file to your desktop and navigate to modules/servers and upload the sbdShoutcast folder into the above FTP location
+
+In WHMCS navigate to http://<whmcs>/admin
+
+Click on Setup > Products/Services > Servers
+
+Click Add New server and input the following details
+
+Name: <You Choose>
+Hostname: <input url without http://> (Example shoutcast.yourdomain.tld)
+IP Address: <URL to shoutcast installation / api> (Example: http://shoutcast/yourdomain.tld/api/) The trailing '/' is important
+Assigned IPs: <put your server ip in here>
+Server Stat: <URL to shoutcast installation/stats/>
+
+Type: SbdShoutcast
+Username: <your super user username>
+Password: <your super user password>
+
+
+Setup is now complete, You can now add a product service of type SbdShoutcast.
+Each shoutcast product needs the following custom fields:
+
+>>>>> Image 1 <<<<<
+
+If you want your users to be able to select how much space they need for the AutoDJ remove the setting in the product and do the following (these exact settings must be used, including the name!, prices can be changed.)
+
+>>>>> Image 2 <<<<<
+
+Thenin your product go to Configurable Options and select the one you have just created.
